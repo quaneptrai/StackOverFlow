@@ -1,0 +1,25 @@
+﻿@model User
+<form method="post" >
+    <div class="container container-fluid">
+        <h1 class="text-center"><i class="bi bi-stack-overflow me-6"></i>StackOverFlow</h1>
+        <h2 class="text-center">Sign up</h2>
+    </div>
+    <div class="form-group">
+        <label asp-for="Firstname" for="exampleFormControlInput1"></label>
+        <input asp-for ="Firstname" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" for="exampleFormControlInput1"></label>
+        <input asp-for="LastName" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" for="exampleFormControlInput1"></label>
+        <input asp-for="Email" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" for="exampleFormControlInput1"></label>
+        <input asp-for="Password" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <button type="submit" class="btn btn-primary form-control mt-4">Sign up</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary form-control mt-3">Back to list</a>
+</form>
