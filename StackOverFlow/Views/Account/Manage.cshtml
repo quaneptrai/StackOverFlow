@@ -1,0 +1,32 @@
+﻿@model List<User>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th><label class="text-center">First Name</label></th>
+                <th><label class="text-center">Last Name</label></th>
+                <th><label class="text-center">Email</label></th>
+                <th><label class="text-center">Password</label></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User obj in Model)
+            {
+                <tr>
+                    <td>@obj.Firstname</td>
+                    <td>@obj.LastName</td>
+                    <td>@obj.Email</td>
+                    <td>@obj.Password</td>
+                    <td>
+                        <div class="d-flex gap-2">
+                            <a asp-controller="Account" asp-action="Edit" asp-route-id="@obj.UsernameId" class="btn btn-sm btn-warning form-control">Edit</a>
+                            <a asp-controller="Account" asp-action="Delete" asp-route-id="@obj.UsernameId" class="btn btn-sm btn-danger form-control">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>

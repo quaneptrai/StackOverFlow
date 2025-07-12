@@ -13,5 +13,19 @@ namespace StackOverFlow.Data
         {
             get; set;
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>().HasData(new User
+            {
+                UsernameId = 1,
+                Firstname = "Admin",
+                LastName = "User",
+                Email = "admin@gmail.com",
+                Password = "admin123",
+                Role = "Admin"
+            });
+
+        }
     }
 }

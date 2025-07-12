@@ -29,8 +29,10 @@ namespace StackOverFlow.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsernameId"));
 
-                    b.Property<int>("Email")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.Property<string>("Firstname")
                         .IsRequired()
@@ -42,11 +44,27 @@ namespace StackOverFlow.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UsernameId");
 
-                    b.ToTable("users");
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UsernameId = -1,
+                            Email = "admin@gmail.com",
+                            Firstname = "Admin",
+                            LastName = "User",
+                            Password = "admin123",
+                            Role = "Admin"
+                        });
                 });
 #pragma warning restore 612, 618
         }

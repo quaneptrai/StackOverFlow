@@ -7,18 +7,22 @@
     <div class="form-group">
         <label asp-for="Firstname" for="exampleFormControlInput1"></label>
         <input asp-for ="Firstname" class="form-control" id="exampleFormControlInput1">
+        <span asp-validation-for="Firstname" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="LastName" for="exampleFormControlInput1"></label>
         <input asp-for="LastName" class="form-control" id="exampleFormControlInput1">
+        <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Email" for="exampleFormControlInput1"></label>
         <input asp-for="Email" class="form-control" id="exampleFormControlInput1">
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Password" for="exampleFormControlInput1"></label>
         <input asp-for="Password" class="form-control" id="exampleFormControlInput1">
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary form-control mt-4">Sign up</button>
     <a asp-controller="Home" asp-action="Index" class="btn btn-secondary form-control mt-3">Back to list</a>

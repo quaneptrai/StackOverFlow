@@ -11,9 +11,10 @@ namespace StackOverFlow.Models
         public string Firstname  { get; set; }
         [Required, DisplayName("Last Name")]
         public string LastName { get; set; }
-        [Required]
-        public int Email { get; set; }
-        [Range(6, 16)]
+        [Required, StringLength(60)]
+        public string Email { get; set; }
+        [StringLength(16,MinimumLength = 6)]
         public string Password { get; set; }
+        public string Role { get; set; } = "User";
     }
 }

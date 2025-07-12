@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StackOverFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70a61d1f989a2448500ac70f9d505cb5a0f45491")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52bad23d48868b3ed1b6cc8bca1bc9c905e96486")]
 [assembly: System.Reflection.AssemblyProductAttribute("StackOverFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StackOverFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
