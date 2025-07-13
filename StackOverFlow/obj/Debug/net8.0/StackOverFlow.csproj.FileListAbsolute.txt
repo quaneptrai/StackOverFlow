@@ -147,6 +147,7 @@ C:\WeekAsp\StackOverFlow\StackOverFlow\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAn
 C:\WeekAsp\StackOverFlow\StackOverFlow\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\appsettings.Development.json
 C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\appsettings.json
+C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\libman.json
 C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\StackOverFlow.staticwebassets.runtime.json
 C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\StackOverFlow.staticwebassets.endpoints.json
 C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\StackOverFlow.exe
@@ -293,4 +294,3 @@ C:\New folder\StackOverFlow\StackOverFlow\obj\Debug\net8.0\refint\StackOverFlow.
 C:\New folder\StackOverFlow\StackOverFlow\obj\Debug\net8.0\StackOverFlow.pdb
 C:\New folder\StackOverFlow\StackOverFlow\obj\Debug\net8.0\StackOverFlow.genruntimeconfig.cache
 C:\New folder\StackOverFlow\StackOverFlow\obj\Debug\net8.0\ref\StackOverFlow.dll
-C:\New folder\StackOverFlow\StackOverFlow\bin\Debug\net8.0\libman.json

@@ -1,6 +1,18 @@
 ﻿@model List<User>
-
+<partial name="_validation" />
 <form method="post">
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h1>Manage User</h1>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="Create" class="btn btn-dark">
+                    <i class="bi bi-plus pe-1"></i>Create new user
+                </a>
+            </div>
+        </div>
+    </div>
     <table class="table">
         <thead>
             <tr>
